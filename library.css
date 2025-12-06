@@ -45,6 +45,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+@media (max-width: 768px) {
+    
+    .section1 {
+        flex-direction: column; 
+        align-items: center;
+        padding-top: 100px; 
+    }
+
+    .paregraph {
+        width: 90%; 
+        text-align: center; 
+    }
+
+    .table img {
+        width: 90%; 
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    
 }
 
 .section1::before {
@@ -56,7 +78,7 @@
 }
 
 .paregraph{
-    padding: 40px;
+    padding: 3%;
     width: 45%;
 }
 
@@ -92,4 +114,60 @@
     gap: 15px;
     align-items: flex-end;
 }
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section2 div {
+    width: 23%;
+    background: #fff;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #00aab0;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .section2 div {
+        width: 48%;
+    }
+}
+
+@media (max-width: 500px) {
+    .section2 div {
+        width: 100%;
+    }
+}
+
+.section2 div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #00aab0;
+}
+
+.section2 i {
+    font-size: 50px;
+    color: #00aab0;
+    margin-bottom: 15px;
+}
+
+.section2 h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.section2 p {
+    color: #555;
+    font-size: 15px;
+}
+
+
+
 
