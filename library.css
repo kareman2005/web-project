@@ -44,7 +44,6 @@
 .section1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     
 }
 
@@ -52,13 +51,12 @@
     
     .section1 {
         flex-direction: column; 
-        align-items: center;
         padding-top: 100px; 
+        
     }
 
     .paregraph {
         width: 90%; 
-        text-align: center; 
     }
 
     .table img {
@@ -168,6 +166,48 @@
     font-size: 15px;
 }
 
+.section3 {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 40px;
+    min-height: 500px;
+}
 
+.image-area {
+    width: 50%;
+    text-align: center;
+}
 
+.image-area img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
 
+.content-area {
+    width: 45%;
+    padding-left: 40px;
+}
+
+.content-area h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-area p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00a9a9;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
