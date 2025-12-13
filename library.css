@@ -47,26 +47,6 @@
     
 }
 
-@media (max-width: 768px) {
-    
-    .section1 {
-        flex-direction: column; 
-        padding-top: 100px; 
-        
-    }
-
-    .paregraph {
-        width: 90%; 
-    }
-
-    .table img {
-        width: 90%; 
-        flex-wrap: wrap;
-        justify-content: center; 
-    }
-    
-}
-
 .section1::before {
     content: "";
     position: absolute;
@@ -106,11 +86,49 @@
     border-radius: 3px;
 }
 
-.table img{
+.table img {
     width: 90%;
-    display: flex;
-    gap: 15px;
-    align-items: flex-end;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    
+    .section1 {
+        flex-direction: column; 
+        
+    }
+
+    .paregraph {
+        width: 90%; 
+    }
+
+    .table img {
+        width: 90%; 
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paregraph {
+        width: 90%;
+        text-align: center;
+    }
+
+    .table img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 .section2 {
@@ -124,7 +142,7 @@
 }
 
 .section2 div {
-    width: 23%;
+    width: calc(25% - 30px);
     background: #fff;
     padding: 10px 5px;
     text-align: center;
@@ -133,17 +151,7 @@
     transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 900px) {
-    .section2 div {
-        width: 48%;
-    }
-}
 
-@media (max-width: 500px) {
-    .section2 div {
-        width: 100%;
-    }
-}
 
 .section2 div:hover {
     transform: translateY(-5px);
@@ -166,6 +174,14 @@
     font-size: 15px;
 }
 
+
+
+@media (max-width: 768px) {
+    .section2 div {
+        width: calc(50% - 30px);
+    }
+}
+
 .section3 {
     display: flex; 
     align-items: center; 
@@ -173,6 +189,7 @@
     padding: 40px;
     min-height: 500px;
 }
+
 
 .image-area {
     width: 50%;
@@ -212,6 +229,29 @@
     border-radius: 3px;
 }
 
+@media (max-width: 768px) {
+
+    .section3 {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .image-area,
+    .content-area {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image-area img {
+        margin: 0 auto 20px;
+    }
+
+    .content-area p {
+        text-align: center;
+    }
+
+}
 
 .section4 {
     padding: 60px;
@@ -285,3 +325,4 @@
 .section4 div div img:hover {
     transform: translateY(-3px);
 }
+
